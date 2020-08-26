@@ -8,13 +8,10 @@ namespace ClassRoom
 {
     class ClassRoom
     {
-        private string className;
-        private List<Student> classList;
-        private DateTime dateTimeSemesterStart;
-
+        
         public ClassRoom()
         {
-
+            ClassList = new List<Student>();
         }
 
         public string ClassName { get; set; }
