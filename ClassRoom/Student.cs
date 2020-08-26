@@ -7,15 +7,21 @@ using System.Threading.Tasks;
 
 namespace ClassRoom
 {
-    class Student
+    public class Student
     {
-        public string name;
-        public int birthMonth;
-        public int birthday;
+        
 
         public Student(string name, int birthMonth, int birthday)
         {
-
+            name = Name;
+            birthMonth = BirthMonth;
+            birthday = Birthday;
         }
+
+        public string Name { get; set; }
+        public int BirthMonth { get; set; }
+        public int Birthday { get; set; }
+
     }
-}
+    }
+
