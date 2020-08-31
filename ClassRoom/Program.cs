@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,9 +23,12 @@ namespace ClassRoom
             room1.ClassList.Add(new Student("Josh", 10, 12));
             room1.ClassList.Add(new Student("Alex", 04, 10));
 
+            
+
             foreach (var student in room1.ClassList)
             {
                 Console.WriteLine(student);
+                Console.WriteLine(student.Season());
             }
 
             Console.ReadKey();
